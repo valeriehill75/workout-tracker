@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 //Schema
-const Schema = mongose.Schema;
+const Schema = mongoose.Schema;
 
 //Instance of Schema
 const workoutSchema = new Schema({
@@ -41,3 +41,7 @@ const workoutSchema = new Schema({
         },
     ],
 });
+
+const Workout = mongoose.model("Workout", workoutSchema);
+
+module.exports = Workout;
