@@ -6,10 +6,10 @@ router.get("/exercise", (_, res) => {
 });
 
 router.get("/stats", (_, res) => {
-    res.sendFile(path.join(__dirname, "..public/stats.html"));
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
 });
 
-router.get("*", (_, res) => {
+router.get("/", (_, res) => {
     res.sendFile(path.join(__dirname, "..public/index.html"));
 });
 
