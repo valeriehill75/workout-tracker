@@ -10,7 +10,7 @@ router.get("/stats", (_, res) => {
 });
 
 router.get("/", (_, res) => {
-    res.sendFile(path.join(__dirname, "..public/index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 module.exports = router;
